@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -6,16 +6,25 @@ import { DataService } from '../services/data.service';
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css']
 })
-export class PokemonListComponent {
+export class PokemonListComponent implements OnInit {
+  pokemons: any[] = []
 
   constructor(
     private dataService: DataService
   ) { }
 
   ngOnInit(): void {
-    this.dataService.getPokemon().subscribe((reponse: any) => {
-      console.log(reponse)
+    this.dataService.getPokemons()
+    .subscribe((response: any) => {
+      response.results.forEach(result => {
+        this.dataService.getMoreData(result.name)
+        .subscribe((uniqResponse: any) => {
+          this.pokemons.push(uniqResponse)
+          console.log(this.pokemons)
+        })
+      })
     })
+
   }
 
 }

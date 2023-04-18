@@ -1,11 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-/* Global */
-/* @import url('https://fonts.cdnfonts.com/css/press-start-2p'); */
+/* Global Vars */
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
 *{
     padding: 0;
     margin: 0;
 }
 
-/* body{
-    font-family: 'Press Start 2P';
-} */
+body{
+    font-family: 'Sigmar One', sans-serif;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/debj0k1-d37b9a16-294a-4673-a148-15a8d4b4e86b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGViajBrMS1kMzdiOWExNi0yOTRhLTQ2NzMtYTE0OC0xNWE4ZDRiNGU4NmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zjEyzCPSHELKL44UPO_YxcEZ4uFWhl6C01LrKv4jmfI");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}

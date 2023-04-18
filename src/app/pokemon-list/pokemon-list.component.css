@@ -12,6 +12,7 @@
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
     display: grid;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .pokemon-grid .box img{
@@ -23,3 +24,4 @@
 pagination-controls{
     text-align: center;
 }
+
